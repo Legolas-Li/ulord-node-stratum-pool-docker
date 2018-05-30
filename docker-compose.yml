@@ -1,0 +1,11 @@
+ulord-pool:
+    image: registry.cn-hangzhou.aliyuncs.com/miner/ulord-pool:latest
+    restart: always
+    environment:
+        - REWARD_ADDRESS=USVsiJeAhXseK6Ed5uUQ8EWESK3KNPgXCn
+        - REWARD_PERCENT=2.0
+    ports:
+        - 80:8080
+        - 7200:7200
+    volumes:
+      - ~/data/ulord-pool-redis:/var/lib/redis
