@@ -1,5 +1,8 @@
 #ulord-node-stratum-pool-docker
 
+
+作者：daoying007 <daoying007@gmail.com>
+
 github地址：https://github.com/daoying007/ulord-node-stratum-pool-docker
 
 ### 一、编译镜像
