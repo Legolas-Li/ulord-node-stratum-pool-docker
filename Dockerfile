@@ -38,7 +38,7 @@ RUN chmod +x /root/*
 # 初始化ulord-node-stratum-pool配置文件
 RUN mv /ulord-node-stratum-pool/config_example.json /ulord-node-stratum-pool/config.json
 
-# 创建矿池Ulord地址并写入配置文件
+# 创建矿池Ulord地址并写入配置文件。这里只是为了启动不报错，实际运行docker容器的时候，还会重新再生成一次
 RUN /UlordChain/src/ulordd -daemon \
     && sleep 5 \
     && /UlordChain/src/ulord-cli getnewaddress | xargs -i sed -i 's/"address": ".*"/"address": "{}"/g' /ulord-node-stratum-pool/pool_configs/ulord.json

@@ -1,4 +1,4 @@
-#ulord-node-stratum-pool-docker
+# Ulord 矿池 docker 镜像 
 
 
 作者：daoying007 <daoying007@gmail.com>
